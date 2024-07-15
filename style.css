@@ -117,27 +117,137 @@ a:link{
 }
 
 
-/* PROJECTS  --- FOR LATER */ 
+/* PROJECTS SECTION*/ 
 
-.case-study-container{
-    margin: 4rem 20rem 2rem 20rem;
+.my-projects-title{
+    text-align: center;
+    margin: 4rem;
 }
 
-/* h1{
-    text-align: center;
-} */
+.case-study-container{
+    display: flex;
+    padding: 5rem;
+}
+
+.project-img-container{
+    margin-left: 3rem;
+}
+
+.project-img-container-1{
+    padding: 0rem 10rem;
+}
+
+.details-link{
+    background-color: transparent;
+    color: var(--main-colour);
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BHPS SECTION */
+
+.survey-imgs{
+    margin-right: 5rem;
+}
+
+.survey-1-img{
+    margin-bottom: 1rem;
+}
+
+.text-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.research-section-list > li{
+    background-color: transparent;
+    color: var(--text1);
+}
+
+.main-research-findings-img{
+    height: 30rem;
+}
+
+.bhps-padding{
+    padding: 0rem 9rem;
+    margin-bottom: 12rem;
+}
+
+.bhps-ideation-img{
+    width: 45rem;
+}
+
+.problem-statement{
+    color: var(--text1);
+    font-weight: bold;
+    padding: 0 15rem;
+}
+
+.right-margin-img{
+    margin-right: 3rem;
+}
+
+.left-margin-img{
+    margin-left: 3rem;
+}
+
+.bottom-margin-img{
+    margin-bottom: 3rem;
+}
+
+.padding-text{
+    padding: 0 15rem;
+}
+
+.grid-img{
+    width: 30rem;
+    height: 20rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    height: 100%; 
+    padding: 5rem;
+}
+
+.grid-section{
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+}
+
+.final-section{
+    margin-bottom: 10rem;
+}
+
 
 /* MEDIA QUERIES */
 
 @media (max-width: 1400px) {
     *{
-        /* background-color: red; */
+        background-color: orange;
     }
     .my-hero,
     .currently-working-on{
         margin: 0rem 20rem;
     }
-    .my-hero{
+    .my-hero,
+    .case-study-container{
         flex-direction: column-reverse;
         margin-bottom: 2rem;
         text-align: center;
@@ -158,17 +268,95 @@ a:link{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .project-container2{
+    .project-container2,
+    .case-study-container-2{
         flex-direction: column;
     }
     header{
         margin-bottom: 5rem;
     }
+    /* PROJECTS */
+
+    .my-projects-title{
+        margin: 2rem;
+    }
+    .british-hedgehod-preservation-society-img{
+        width: 30rem;
+        margin-bottom: 2rem;
+    }
+    .us-dof-img{
+        margin-bottom: 2rem;
+    }
+
+    /* BHPS */
+
+    .survey-imgs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .case-study-container{
+        padding: 0 7rem;
+    }
+
+    .bhps-padding{
+        padding: 0;
+        margin: 0;
+    }
+
+    .research-section-list{
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .my-projects-title{
+        margin: 3rem;
+    }
+
+    .during-research-text{
+        margin-top: 2rem;
+    }
+    .orange-padding{
+        padding: 7rem;
+    }
+
+    .brainstorming-img-1{
+        padding-top: 2rem;
+    }
+    .feature-prioritisation-matrix-img{
+        padding-bottom: 2rem;
+    }
+
+    .grid-container{
+        margin-top: -13rem;
+    }
+
+    .grid-img{
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .final-product-img{
+        margin-bottom: 2rem;
+    }
+
+    .my-projects-title-bottom{
+        margin-bottom: -3rem;
+    }
+
+    .ideation-img{
+        margin-bottom: -17rem;
+    }
 }
 
 @media (max-width: 1200px) {
     *{
-        /* background-color: red; */
+        background-color: red;
     }
     .my-hero,
     .currently-working-on{
@@ -202,12 +390,41 @@ a:link{
     header{
         margin-bottom: 5rem;
     }
+
+    /* BHPS */
+
+    .survey-imgs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .bhps-padding{
+        padding: 0;
+        margin: 0;
+    }
+
+    .red-padding{
+        padding: 5rem;
+    }
+
+    .grid-section{
+        width: 100%;
+        margin-bottom: -7rem;
+    }
+
+    .grid-img{
+        width: 22rem;
+        height: 15rem;
+    }
 }
 
 
 @media (max-width: 1000px) {
     *{
-        /* background-color: green; */
+        background-color: green;
     }
     .my-hero,
     .currently-working-on{
@@ -227,11 +444,74 @@ a:link{
     .project-container{
         align-items: center;
     }
+    /* PROJECTS */
+    .british-hedgehod-preservation-society-img{
+        width: 25rem;
+        margin-bottom: 2rem;
+    }
+    .us-dof-img{
+        margin-bottom: 2rem;
+    }
+
+    .project-img-container,
+    .project-img-container-1{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* BHPS */
+
+    .green-padding{
+        padding: 5rem;
+    }
+
+    .my-projects-title{
+        margin: 3rem;
+    }
+
+    .problem-statement{
+        padding: 0 4rem;
+    }
+
+    .my-projects-title-bottom{
+        margin-bottom: -3rem;
+    }
+
+    .user-persona{
+        margin-top: 7rem;
+    }
+
+    .padding-text{
+        padding: 0 4rem;
+    }
+
+    .bhps-ideation-img,
+    .final-product-img{
+        width: 30rem;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-img{
+        width: 22rem;
+        height: 15rem;
+    }
+    .our-brainstorming-text{
+        padding: 0;
+        margin: 0;
+    }
+
+    .left-margin-img,
+    .right-margin-img{
+        margin: 0;
+    }
 }
 
 @media (max-width: 600px) {
     *{
-        /* background-color: purple; */
+        background-color: purple;
     }
     .kanjiquest-img,
     .orangutan-img{
@@ -239,4 +519,55 @@ a:link{
         height: 15rem;
         margin-bottom: 1rem;
     }
+
+    /* PROJECTS */
+
+    .british-hedgehod-preservation-society-img{
+        width: 20rem;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .us-dof-img{
+        margin-bottom: 2rem;
+    }
+
+    .project-img-container,
+    .project-img-container-1{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* BHPS */
+
+    .bhps-padding{
+        padding: 0;
+        margin: 0;
+    }
+    .my-projects-title-bottom{
+        margin-bottom: 1rem;
+    }
+
+    .survey-1-img,
+    .survey-2-img{
+        width: 25rem;
+    }
+
+    .main-research-findings-img,
+    .ideation-stage-img{
+        width: 25rem;
+        height: 20rem; 
+    }
+
+    .user-persona{
+        margin-top: 15rem;
+    }
+
+    .grid-container{
+        margin-top: -6rem;
+    }
+
+    .purple-padding{
+        padding: 0.7rem;
+    }
+    
 }
